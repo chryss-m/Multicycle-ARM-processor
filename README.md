@@ -33,9 +33,7 @@ The datapath is responsible for the processing and flow of data within the syste
 
 To construct the Datapath, the following components were initially designed: Program Counter (PC), Instruction Memory, Adder, 2-to-1 Multiplexer, 3-to-1 Multiplexer, Register File, Extender, ALU, Status Register, Data Memory, and various Registers with different functionalities, including Registers with Reset and Write Enable (WE) signals and Registers with only Reset functionality. These fundamental modules were then interconnected to form the complete Datapath of the Multicycle ARM Processor, ensuring efficient data flow and execution of instructions.
 
-<p align="center">
-  <img src="schemas/datapath.png"  width=500>
-</p>
+
 
 ### 2️⃣ Control Unit
 The control unit in a processor is responsible for coordinating and controlling the execution of a program's instructions. Specifically, it receives instructions from memory, decodes them into control signals, and then coordinates the transfer of data to the datapath.
