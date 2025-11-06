@@ -7,7 +7,7 @@ end FSM_tb;
 
 architecture testbench of FSM_tb is
 
-    -- ”ﬁÏ·Ù· „È· ÙÔ FSM
+    
     signal CLK         : std_logic := '0';
     signal RESET       : std_logic := '0';
     signal op          : std_logic_vector(1 downto 0) := "00";
@@ -76,7 +76,7 @@ begin
         op <= "00"; NoWrite_in <= '0'; CondEx_in <= '1'; S <= '0'; Rd <= "0001";
         wait for CLK_PERIOD;
 
-        -- 2: ≈CMP
+        -- 2: √ÖCMP
         NoWrite_in <= '1';
         wait for CLK_PERIOD;
 
