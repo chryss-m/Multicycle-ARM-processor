@@ -84,7 +84,7 @@ begiN
 
     stimuli : process
     begiN
-        -- Αρχικοποίηση σημάτων
+        
         RegSrc <= (others => '0');
         RegWrite <= '0';
         ALUCoNtrol <= (others => '0');
@@ -98,7 +98,7 @@ begiN
         IRWrite <= '0';
         FlagsWrite <= '0';
 
-        -- Επαναφορά (Reset)
+        
         RESET <= '1';
         wait for 100 Ns;
         RESET <= '0';
@@ -125,7 +125,6 @@ begiN
         MemtoReg <= '0';
         wait for TbPeriod;
 
-        -- Τερματισμός προσομοίωσης
         TbSimENded <= '1';
         wait;
     eNd process;
