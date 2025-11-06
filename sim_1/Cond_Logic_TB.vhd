@@ -83,7 +83,6 @@ begin
         cond_tb <= "1110"; flags_tb <= "0000"; wait for 10 ns;  
         cond_tb <= "1111"; flags_tb <= "0000"; wait for 10 ns;  
         
-        -- Τέλος Προσομοίωσης
         wait;
     end process;
 
